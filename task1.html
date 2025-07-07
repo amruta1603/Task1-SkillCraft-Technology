@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNova Solutions</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <header>
+        <div><strong>TechNova</strong></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome-section">
+        <div class="welcome-content">
+            <h1>Welcome to <span>TechNova Solutions</span></h1>
+            <p>Your partner in digital transformation</p>
+            <a href="#about" class="scroll-btn">↓ Explore More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p><strong>TechNova Solutions</strong> is a next-generation technology company specializing in end-to-end digital transformation. We empower startups, SMEs, and enterprises to thrive in the digital age through custom-built software, innovative AI-powered tools, and scalable cloud architectures.</p>
+        <p>With a team of passionate developers, designers, and data scientists, we help businesses reimagine operations, enhance customer experiences, and unlock new revenue streams. Our commitment to agility, creativity, and continuous innovation sets us apart in delivering future-ready digital solutions.</p>
+        <p>Whether you need a stunning website, a smart recommendation engine, a secure mobile app, or cloud migration services — <strong>TechNova Solutions</strong> is your trusted tech partner for every step of the digital journey.</p>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>Responsive, secure, and high-performance websites tailored to your business needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>AI & Machine Learning</h3>
+                <p>Leverage AI to automate, analyze, and enhance your business operations.</p>
+            </div>
+            <div class="service-item">
+                <h3>Cloud Computing</h3>
+                <p>Deploy scalable cloud infrastructure using AWS, Azure, or Google Cloud.</p>
+            </div>
+            <div class="service-item">
+                <h3>Mobile App Development</h3>
+                <p>Build sleek, cross-platform mobile applications with rich user experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> contact@technova.com</p>
+            <p><strong>Phone:</strong> +91-8765433210</p>
+            <p><strong>Address:</strong> 101 Innovation Park, Pune, Maharashtra, India</p>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- JavaScript for header scroll effect -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
